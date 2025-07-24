@@ -1,0 +1,2 @@
+This repository is aimed at proferring solutions to all the questions in assignemt 2 of the Zero_to_Hero python program.
+I promise to give a detail account of all my solution step by step using best practices as much as my ability can take me.
