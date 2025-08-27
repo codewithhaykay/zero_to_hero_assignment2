@@ -13,7 +13,7 @@ def creative_full_name():
     titlecase_name = full_name.title()
     initials = ''.join([name[0].upper() + '.' for name in full_name.split() if name])
     char_count = len(full_name.replace(" ", ""))
-    vowel_count = sum(1 for char in full_name.lower() if char in 'aeiou')
+    vowel_count = sum(char in full_name for char in full_name.lower() if char in 'aeiou')
 
     result = (
         f"Uppercase: {uppercase_name}\n"
@@ -28,3 +28,23 @@ def creative_full_name():
 
 
 print(creative_full_name())
+
+# # name = "Akeem Lanrewaju Akinyoola"
+# # print(len("".join(name.split())))
+# # name_gen = sum(nam in name for nam in "".join(name.split()))
+# # print(name_gen)
+# # print("-".join("Akeem"))
+
+# # print()
+# # print("-".join(["Akeem"]))
+
+# greetings = " Hello World \t Python "
+# print(" ".join(greetings.split()))
+
+# greetings = "Hello World from Python"
+# print("-".join(greetings.split(" ")))
+
+# given_word = "lang=python;level=beginner;days=100"
+# print(given_word.split(";")) 
+# print() 
+# print(given_word.replace("=", ":").split(";"))
